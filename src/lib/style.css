@@ -1,11 +1,31 @@
-p {
-    color : blue;
-    font-family: "Times New Roman", Times, serif;
-    font-size: 12px;
-}
-
-h2 {
- color: red;
- font-size: 20px;
- font-weight: bold;
-}
+.headerContainer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 0px;
+    background-color: rgb(0, 0, 0); 
+    color: white; 
+    padding: 20px 0;
+    }
+    
+    p {
+        color : black;
+        font-family: "Arial", Times, serif;
+        font-size: 17px;
+    }
+    
+    
+    h2 {
+     color: red;
+     font-size: 20px;
+     font-family: "Arial", Times, serif;
+     font-weight: bold;
+    }
+    
+    h1{
+        color:rgb(126, 6, 6);
+        font-family: "Opera 3";
+        font-size: 30px;
+        
+    }
+    

@@ -1,29 +1,108 @@
 <!DOCTYPE html>
 <html>
+
  <head>
-    <title>Mi página personal</title>
+    <link rel ="stylesheet" href="lib/style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <title> ¡Automania! </title>
+    <style>
+        body {
+            background-color: rgb(255, 255, 255);
+            color: rgb(0, 0, 0); 
+        }
+        .car {
+            margin-bottom: 20px;
+        }
+        .car img {
+            width: 190px;
+            height: 100px;
+        }
+        .car .specifications {
+            margin: 10px 0;
+        }
+        .car .rating {
+            margin: 10px 0;
+        }
+    </style>
  </head>
+
  <body>
-  <h1>Mi página personal</h1>
-  <h2>¡Hola!</h2>
+
+  <div class="headerContainer">
+    <img src="img/carro.jpeg" alt="Imagen de arriba" style="display: block; margin-left: auto; margin-right: auto; width: 20%;">
+  </div>
+  
+  <h1>Quienes Somos?</h1>
   <p>
-    Bienvenido a mi página personal. Soy Kelly, me gusta enseñar Ing de Sw a niñ@s y jóvenes. En esta página, compartiré información sobre mí.
-  </p> 
-  <img src="img/WallpaperDISC.png" alt="Mi Foto" width="500" height="333">
-  <table>
-    <tr>
-        <th>Lenguajes de programación</th>
-        <th>Idiomas</th>
-        <th>Hobbies</th>
-    </tr>
-    <tr>
-        <td>Java, Python</td>
-        <td>Español, Inglés, Francés</td>
-        <td>Pilates</td>
-    </tr>
-  </table>  
-  <p>
-  <a href="https://profesores.virtual.uniandes.edu.co/kjgarces971/es/inicio/" target="_blank">Página institucional</a>
+    Somos una equipo de personas fanaticos a los carros, a los que nos gusta compartir nuestras experiencias y calificaciones
+    de automobiles, suv y cualquier cosa que tenga llantas.
   </p>
+
+  <h1>
+    Nuestro Catalogo calificado:
+  </h1>
+
+  <div class="row">
+    <div class="col car">
+      <img src="img/Tesla.jpg" alt="Tesla CyberTruck">
+      <a href="https://www.tesla.com/cybertruck" target="_blank"> Tesla CyberTruck</a>
+      <ul class="specifications">
+        <li>Motor: Eléctrico, con configuraciones de uno, dos o tres motores</li>
+        <li>Potencia: Hasta 800 hp</li>
+        <li>Autonomía: Hasta 500+ millas</li>
+        <li>Velocidad máxima: 130 mph</li>
+        <li>Capacidad de remolque: Hasta 14,000 lbs</li>
+        <li>Peso: Entre 5000-6500 lb (2267-2948 kg)</li>
+        <li>Puntuación: 4.5/5</li>
+      </ul>
+    </div>
+
+    <div class="col car">
+      <img src="img/porsche_911.jpg" alt="Porsche 911 Turbo S">
+      <a href="https://www.porsche.com/usa/models/911/911-turbo-models/911-turbo-s/" target="_blank"> Porsche 911 Turbo S</a>
+      <ul class="specifications">
+        <li>Motor: 3,749 cm3 boxer engine con dos VTG turbochargers</li>
+        <li>Potencia: 478 kW (650 PS)</li>
+        <li>Transmisión: 8-speed Porsche Doppelkupplung (PDK)</li>
+        <li>Peso: 6,843 lbs</li>
+        <li>Velocidad máxima: 330 km/h</li>
+        <li>Puntuación: 4.9/5</li>
+      </ul>
+    </div>
+
+    <div class="col car">
+      <img src="img/Ferrari.jpg" alt="Ferrari SF90">
+      <a href="https://www.ferrari.com/en-EN/auto/sf90-stradale" target="_blank"> Ferrari SF90</a>
+      <ul class="specifications">
+        <li>Motor: 90° V8 turbo</li>
+        <li>Potencia: 780 cv (motor de combustión), 220 cv (motores eléctricos), 1,000 cv total</li>
+        <li>Transmisión: 8-speed dual-clutch</li>
+        <li>Velocidad máxima: 340 km/h</li>
+        <li>Puntuación: 4.6/5</li>
+      </ul>
+    </div>
+
+    <div class="col car">
+      <img src="img/bugatti.jpg" alt="Bugatti Divo">
+      <a href="https://www.bugatti.com/the-bugatti-models/coachbuilding/divo/" target="_blank"> Bugatti Divo</a>
+      <ul class="specifications">
+        <li>Motor: 8.0 L (488 cu in) quad-turbocharged W16</li>
+        <li>Potencia: 1,103 kW (1,500 PS; 1,479 hp)</li>
+        <li>Transmisión: 7-speed dual-clutch</li>
+        <li>Peso: 1,961 kg (4,323 lb)</li>
+        <li>Velocidad máxima: 380 km/h (236 mph)</li>
+        <li>Puntuación: 4.1/5</li>
+      </ul>
+    
+    </div>
+  </div>
+
+  <h1>Suscríbete para recibir más información</h1>
+  <form>
+    <label for="email">Correo electrónico:</label><br>
+    <input type="email" id="email" name="email"><br>
+    <input type="submit" value="Suscribirse">
+  </form>
+  
   </body>
 </html>
